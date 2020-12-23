@@ -1,0 +1,65 @@
+@mainColor:#2bab7b;
+@subColor:#a0a0a0;
+.login {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /deep/ .van-nav-bar__text {
+    color: @mainColor;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  .nav-left {
+    display: flex;
+    .logo {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-top: 8px;
+    }
+    .logo-text {
+      font-size: 16px;
+      font-weight: bold;
+      margin-left: 10px;
+      line-height: 46px;
+    }
+  }
+
+  .user-info {
+    padding: 0 16px;
+    margin-top: 50px;
+    .title-box {
+      margin-top: 100px;
+      margin-bottom: 60px;
+      .welcome {
+        font-size: 26px;
+        font-weight: bold;
+      }
+      .sub-title {
+        font-size: 14px;
+        color: @subColor;
+        margin-top: 20px;
+      }
+    }
+    .forgot-box {
+      text-align: right;
+      font-size: 14px;
+      margin-top: 20px;
+      color: @subColor;
+    }
+    .submit-btn {
+      margin-top: 50px;
+    }
+    .register-box {
+      padding: 0 16px;
+      .register-title {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 16px 0px;
+      }
+    }
+    
+  }
+}

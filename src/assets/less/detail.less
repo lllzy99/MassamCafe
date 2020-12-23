@@ -1,0 +1,163 @@
+.detail{
+  padding-top: 46px;
+  padding-bottom: 80px;
+  /deep/ .van-tabbar--fixed{
+    position: static;
+    left: 0;
+    bottom: 0;
+  }
+  /deep/ .van-nav-bar__text{
+    color: #2bab7b;
+  }
+  /deep/ .van-nav-bar__title{
+    color: #4c4c4c;
+  }
+  /deep/ .van-nav-bar .van-icon{
+    color: #2bab7b;
+  }
+  /deep/ .van-info{
+    background-color: #2bab7b;
+  }
+
+  .current-pro-img{
+    background-color: #ccc;
+  }
+
+  .current-title-box{
+    font-size: 16px;
+    color: #4c4c4c;
+    margin-top: -100px;
+    padding: 0 16px;
+    position: relative;
+    z-index: 99;
+    .current-text{
+      margin-left: 10px;
+      .current-title{
+        display: inline-block;
+        margin-bottom: 5px;
+        padding: 5px 10px;
+        background-color: rgba(247, 247, 247, .8);
+        border-radius: 16px;
+      }
+      .current-enname{
+        font-size: 12px;
+      }
+    }
+    .current-price{
+      font-size: 16px;
+      font-weight: bold;
+      color: #2bab7b;
+      margin-right: 20px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 99;
+    }
+  }
+
+  .current-pro-detail{
+    background-color: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 0px 2px 0px #b4d9c8;
+    position: relative;
+    top: 36px;
+    padding: 16px;
+    margin: 0 10px;
+    .current-count{
+      font-size: 14px;
+      line-height: 43px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+      .count-text{
+        font-size: 20px;
+        color: #2bab7b;
+      }
+
+      /deep/ .van-stepper--round .van-stepper__minus{
+        color:#2bab7b;
+        border-color: #2bab7b;
+      }
+      /deep/ .van-stepper--round .van-stepper__plus{
+        background-color: #2bab7b;
+      }
+    }
+    .rule-box{
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+      .rule-item{
+        .rule-t{
+          font-size: 14px;
+        }
+        .rule-detail{
+          display: flex;
+          margin-left: 50px;
+        }
+        .rule-item{
+          width: 50px;
+          text-align: center;
+          font-size: 12px;
+          color: #4c4c4c;
+          padding: 5px;
+          margin-right: 28px;
+          border-radius: 20px;
+          border: 1px solid #b4d9c8;
+          &.large-text{
+            font-size: 12px;
+          }
+          &.active{
+            background-color:#2bab7b;
+            color: #ffffff;
+          }
+        }
+        
+      }
+    }
+    .current-desc{
+      .desc-title{
+        margin: 15px 0 10px 0;
+        font-size: 14px;
+      }
+      .desc-item{
+        color: #999;
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 0 12px;
+
+      }
+    }
+    
+  }
+
+  .detail-bottom{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    /deep/ .van-tabbar-item{
+      padding: 0 16px;
+    }
+
+    .btn{
+      height: 100%;
+      line-height: 46px;
+      display: flex;
+      text-align: center;
+      color: #ffffff;
+      cursor: pointer;
+      .add-shoppingbag{
+        padding: 0 22px;
+        border-top-left-radius: 22px;
+        border-bottom-left-radius: 22px;
+        background-color: #ccc;
+      }
+      .buy-now{
+        padding: 0 22px;
+        background-color: #fff;
+        border-top-right-radius: 22px;
+        border-bottom-right-radius: 22px;
+      }
+    }
+  }
+}

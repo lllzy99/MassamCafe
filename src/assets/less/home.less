@@ -1,0 +1,77 @@
+@mainColor:#2bab7b;
+@subColor:#a0a0a0;
+.home{
+  padding-top: 46px;
+
+  /deep/ .van-nav-bar__left .van-nav-bar__text{
+    font-size: 16px !important;
+    font-weight: bold;
+    color: #4c4c4c;
+  }
+  /deep/ .van-nav-bar__right .van-nav-bar__text{
+    font-size: 14px;
+    color: #999;
+  }
+  .home-content{
+    padding: 10px;
+    .home-banner{
+      margin-bottom: 10px;
+      border-radius: 8px;
+      overflow: hidden;
+      .banner-index{
+        display: flex;
+        position: absolute;
+        right: 10px;
+        bottom: 15px;
+        .banner-circle{
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background-color: rgba(255, 255, 255, .5);
+          margin-right: 5px;
+          transition: all .3s ease-in-out;
+          &:nth-last-child(1){
+            margin-right: 0;
+          }
+          &.active{
+            width: 8px;
+            height: 5px;
+            border-radius: 2px;
+            background-color: @mainColor;
+          }
+        }
+      }
+    }
+
+    .home-product{
+      .pro-title{
+        display: inline-block;
+        margin-bottom: 10px;
+        padding-bottom: 6px;
+        border-bottom: 3px solid #2bab7b;
+        .pro-title-text{
+          font-size: 16px;
+          font-weight: bold;
+          transform: translate(2px,5px);
+        }
+      }
+      .pro-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .pro-item{
+          width: calc(50% - 5px);
+          margin-bottom: 10px;
+          box-shadow: 0px 0px 2px #ccc;
+          border-radius: 5px;
+          overflow: hidden;
+        }
+        
+      }
+      
+    }
+  }
+
+
+  
+}

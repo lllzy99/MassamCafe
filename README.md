@@ -1,19 +1,4 @@
-# lkcoffee
+#Massam Cafe
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+本项目是一款利用vue-cli搭建的移动端商城app,是销售咖啡的,提供的功能有登录,注册,
+浏览添加收藏及购买商品,管理订单状态,退出登录,注销账户等等
